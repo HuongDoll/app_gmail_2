@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout   xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/avt"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="H"
+        android:background="@drawable/round5"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="30dp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="11/11/2020"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:layout_alignRight="@id/image"
+        />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="start"
+        android:paddingLeft="10dp"
+        android:text="Huong.htt"
+        android:textColor="#252525"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/avt"
+        android:layout_toLeftOf="@+id/time"
+        >
+
+    </TextView>
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/name"
+        android:src="@drawable/full"
+        android:layout_alignParentRight="true">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/name"
+        android:paddingLeft="10dp"
+        android:text="sent email to..."
+        android:textSize="14dp"
+        android:layout_toLeftOf="@+id/image"
+        android:layout_alignLeft="@+id/name">
+
+    </TextView>
+
+</RelativeLayout>
